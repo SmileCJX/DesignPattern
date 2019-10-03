@@ -1,4 +1,4 @@
-package pers.caijx.pinciple.singleresponsibility;
+package pers.caijx.principle.singleresponsibility;
 
 /**
  * @ClassName SingleResponsibility1
