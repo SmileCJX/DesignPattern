@@ -1,13 +1,13 @@
 package pers.caijx.pinciple.singleresponsibility;
 
 /**
- * @ClassName SingleResponsibillity1
+ * @ClassName SingleResponsibility1
  * @Description: TODO
  * @Author Think
  * @Date 2019/10/3
  * @Version V1.0
  **/
-public class SingleResponsibillity1 {
+public class SingleResponsibility1 {
 
     public static void main(String[] args) {
         Vehicle vehicle = new Vehicle();
