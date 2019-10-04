@@ -16,8 +16,13 @@ public class DependencyPass {
 //        openAndClose.open(tv);
 
         // 方式2
-        IOpenAndClose openAndClose = new OpenAndClose(tv);
-        tv.play();
+//        IOpenAndClose openAndClose = new OpenAndClose(tv);
+//        tv.play();
+
+        // 方式3
+        IOpenAndClose openAndClose = new OpenAndClose();
+        openAndClose.setTv(tv);
+        openAndClose.open();
     }
 }
 
@@ -52,36 +57,9 @@ class ChangHong implements ITV {
 //}
 
 // 方式2：通过构造方法传递依赖
-interface IOpenAndClose {
-
-    void open();
-}
-
-interface ITV {
-
-    void play();
-}
-
-class OpenAndClose implements IOpenAndClose {
-
-    private ITV tv;  // 成员
-
-    public OpenAndClose(ITV tv) {  // 构造器
-        this.tv = tv;
-    }
-
-    @Override
-    public void open() {
-        this.tv.play();
-    }
-}
-
-// 通过setter方法传递
 //interface IOpenAndClose {
 //
 //    void open();
-//
-//    void setTv(ITV tv);
 //}
 //
 //interface ITV {
@@ -91,15 +69,42 @@ class OpenAndClose implements IOpenAndClose {
 //
 //class OpenAndClose implements IOpenAndClose {
 //
-//    private ITV tv;
+//    private ITV tv;  // 成员
+//
+//    public OpenAndClose(ITV tv) {  // 构造器
+//        this.tv = tv;
+//    }
 //
 //    @Override
 //    public void open() {
-//        tv.play();
-//    }
-//
-//    @Override
-//    public void setTv(ITV tv) {
-//        this.tv = tv;
+//        this.tv.play();
 //    }
 //}
+
+// 通过setter方法传递
+interface IOpenAndClose {
+
+    void open();
+
+    void setTv(ITV tv);
+}
+
+interface ITV {
+
+    void play();
+}
+
+class OpenAndClose implements IOpenAndClose {
+
+    private ITV tv;
+
+    @Override
+    public void open() {
+        tv.play();
+    }
+
+    @Override
+    public void setTv(ITV tv) {
+        this.tv = tv;
+    }
+}
