@@ -1,5 +1,7 @@
 package pers.caijx.principle.Ocp;
 
+import java.sql.SQLOutput;
+
 /**
  * @ClassName Ocp
  * @Description: TODO
@@ -13,11 +15,12 @@ public class Ocp {
         GraphicEditor graphicEditor = new GraphicEditor();
         graphicEditor.drawShape(new Rectangle());
         graphicEditor.drawShape(new Circle());
+        graphicEditor.drawShape(new Triangle());
     }
 }
 
 /**
- * 这是一个用于绘图的类
+ * 这是一个用于绘图的类【使用类】
  */
 class GraphicEditor {
 
@@ -30,6 +33,8 @@ class GraphicEditor {
             drawRectangle(shape);
         } else if (2 == shape.getM_type()) {
             drawCircle(shape);
+        } else if (3 == shape.getM_type()) {
+            drawTriangle(shape);
         }
     }
 
@@ -47,6 +52,10 @@ class GraphicEditor {
      */
     private void drawCircle(Shape r) {
         System.out.println("绘制圆形");
+    }
+
+    private void drawTriangle(Shape r) {
+        System.out.println("绘制三角形");
     }
 
 }
@@ -75,6 +84,14 @@ class Circle extends Shape {
 
     public Circle() {
         super.setM_type(2);
+    }
+}
+
+// 新增画三角形
+class Triangle extends Shape {
+
+    public Triangle() {
+        super.setM_type(3);
     }
 }
 
