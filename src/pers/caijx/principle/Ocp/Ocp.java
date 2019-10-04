@@ -16,8 +16,15 @@ public class Ocp {
     }
 }
 
+/**
+ * 这是一个用于绘图的类
+ */
 class GraphicEditor {
 
+    /**
+     * 接收shape对象，然后根据type，来绘制不同的对象
+     * @param shape
+     */
     public void drawShape(Shape shape) {
         if (1 == shape.getM_type()) {
             drawRectangle(shape);
