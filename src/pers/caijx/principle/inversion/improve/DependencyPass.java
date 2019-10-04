@@ -31,7 +31,7 @@ interface IOpenAndClose {
 class OpenAndClose implements IOpenAndClose {
 
     @Override
-    public void open(ITV itv) {
-        itv.play();
+    public void open(ITV tv) {
+        tv.play();
     }
 }
