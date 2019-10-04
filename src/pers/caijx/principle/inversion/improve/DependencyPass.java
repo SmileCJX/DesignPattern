@@ -37,9 +37,36 @@ public class DependencyPass {
 //}
 
 // 方式2：通过构造方法传递依赖
+//interface IOpenAndClose {
+//
+//    void open();
+//}
+//
+//interface ITV {
+//
+//    void play();
+//}
+//
+//class OpenAndClose implements IOpenAndClose {
+//
+//    private ITV tv;  // 成员
+//
+//    public OpenAndClose(ITV tv) {  // 构造器
+//        this.tv = tv;
+//    }
+//
+//    @Override
+//    public void open() {
+//        this.tv.play();
+//    }
+//}
+
+// 通过setter方法传递
 interface IOpenAndClose {
 
     void open();
+
+    void setTv(ITV tv);
 }
 
 interface ITV {
@@ -49,14 +76,15 @@ interface ITV {
 
 class OpenAndClose implements IOpenAndClose {
 
-    private ITV tv;  // 成员
-
-    public OpenAndClose(ITV tv) {  // 构造器
-        this.tv = tv;
-    }
+    private ITV tv;
 
     @Override
     public void open() {
-        this.tv.play();
+        tv.play();
+    }
+
+    @Override
+    public void setTv(ITV tv) {
+        this.tv = tv;
     }
 }
