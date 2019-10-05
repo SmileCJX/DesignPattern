@@ -2,7 +2,7 @@ package pers.caijx.principle.Ocp.improve;
 
 /**
  * @ClassName Ocp
- * @Description: TODO
+ * @Description: 开闭原则改进
  * @Author Think
  * @Date 2019/10/4
  * @Version V1.0
@@ -14,6 +14,7 @@ public class Ocp {
         graphicEditor.drawShape(new Rectangle());
         graphicEditor.drawShape(new Circle());
         graphicEditor.drawShape(new Triangle());
+        graphicEditor.drawShape(new OtherGraphic());
     }
 }
 
