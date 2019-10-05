@@ -1,7 +1,5 @@
 package pers.caijx.principle.Ocp;
 
-import java.sql.SQLOutput;
-
 /**
  * @ClassName Ocp
  * @Description: TODO
