@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @ClassName Demeter1
- * @Description: TODO
+ * @Description: 使用迪米特法则改进
  * @Author Think
  * @Date 2019/10/5
  * @Version V1.0
