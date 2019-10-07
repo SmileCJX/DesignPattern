@@ -1,8 +1,10 @@
 @startuml
 
 class Person
+Person : -idCard: IDCard
 
 class IDCard
+IDCard : -person: Person
 
 Person <..> IDCard
 note left on link #red : 双向一对一关系
