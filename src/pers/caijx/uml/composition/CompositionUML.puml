@@ -3,8 +3,8 @@
 class Mouse
 class Monitor
 class Computer
-Computer : -mouse: Mouse
-Computer : -monitor: Monitor
+Computer : -mouse: Mouse = new Mouse()
+Computer : -monitor: Monitor = new Monitor()
 
 Computer *-- Mouse
 Computer *-- Monitor
