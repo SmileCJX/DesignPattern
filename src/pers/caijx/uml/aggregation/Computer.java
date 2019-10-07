@@ -9,12 +9,12 @@ package pers.caijx.uml.aggregation;
  **/
 public class Computer {
 
-    private Computer computer;
+    private Monitor monitor; // 显示器可以和computer分离
 
-    private Mouse mouse;
+    private Mouse mouse; // 鼠标可以和computer分离
 
-    public void setComputer(Computer computer) {
-        this.computer = computer;
+    public void setMonitor(Monitor monitor) {
+        this.monitor = monitor;
     }
 
     public void setMouse(Mouse mouse) {
