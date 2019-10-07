@@ -1,0 +1,21 @@
+@startuml
+
+PersonServiceBean : personDao : PersonDao
+PersonServiceBean : sava(person : Person):void
+PersonServiceBean : getIDCard(personid : Integer) : IDCard
+PersonServiceBean : modify() : void
+
+class Department
+
+class IDCard
+
+class Person
+
+class PersonDao
+
+PersonServiceBean ..> Department
+PersonServiceBean ..> IDCard
+PersonServiceBean ..> Person
+PersonServiceBean ..> PersonDao
+
+@enduml
