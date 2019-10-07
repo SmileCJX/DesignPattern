@@ -1,0 +1,10 @@
+@startuml
+
+class Person
+
+class IDCard
+
+Person <..> IDCard
+note left on link #red : 双向一对一关系
+
+@enduml
