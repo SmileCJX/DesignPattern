@@ -1,6 +1,4 @@
-package pers.caijx.type5;
-
-import java.sql.SQLOutput;
+package pers.caijx.singleton.type5;
 
 /**
  * @ClassName SingletonTest05
