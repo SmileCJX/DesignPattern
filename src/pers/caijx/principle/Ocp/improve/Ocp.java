@@ -31,26 +31,6 @@ class GraphicEditor {
         shape.draw();
     }
 
-    /**
-     * 绘制矩形
-     * @param r
-     */
-    private void drawRectangle(Shape r) {
-        System.out.println("绘制矩形");
-    }
-
-    /**
-     * 绘制圆形
-     * @param r
-     */
-    private void drawCircle(Shape r) {
-        System.out.println("绘制圆形");
-    }
-
-    private void drawTriangle(Shape r) {
-        System.out.println("绘制三角形");
-    }
-
 }
 
 abstract class Shape {
