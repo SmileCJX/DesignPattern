@@ -1,4 +1,4 @@
-package pers.caijx.simplefactory.pizzastore.pizza;
+package pers.caijx.factory.simplefactory.pizzastore.order;
 
 /**
  * @ClassName PizzaStore

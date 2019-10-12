@@ -1,4 +1,7 @@
-package pers.caijx.simplefactory.pizzastore.pizza;
+package pers.caijx.factory.simplefactory.pizzastore.order;
+
+import pers.caijx.factory.simplefactory.pizzastore.pizza.Pizza;
+import pers.caijx.factory.simplefactory.pizzastore.pizza.SimpleFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;

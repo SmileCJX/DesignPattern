@@ -1,4 +1,6 @@
-package pers.caijx.simplefactory.pizzastore.pizza;
+package pers.caijx.factory.simplefactory.pizzastore.pizza;
+
+import pers.caijx.factory.simplefactory.pizzastore.order.PepperPizza;
 
 /**
  * @ClassName SimpleFactory
