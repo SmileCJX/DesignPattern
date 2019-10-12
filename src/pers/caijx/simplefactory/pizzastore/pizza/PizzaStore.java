@@ -14,8 +14,11 @@ public class PizzaStore {
 //        new OrderPizza();
 
         // 使用简单工厂模式
-        new OrderPizza(new SimpleFactory());
-        System.out.println(" 退出程序 ");
+//        new OrderPizza(new SimpleFactory());
+//        System.out.println(" 退出程序 ");
+
+        // 使用静态工厂模式
+        new OrderPizza2();
     }
 
 }
