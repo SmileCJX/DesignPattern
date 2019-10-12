@@ -11,6 +11,11 @@ package pers.caijx.simplefactory.pizzastore.pizza;
 public class PizzaStore {
 
     public static void main(String[] args) {
-        new OrderPizza();
+//        new OrderPizza();
+
+        // 使用简单工厂模式
+        new OrderPizza(new SimpleFactory());
+        System.out.println(" 退出程序 ");
     }
+
 }

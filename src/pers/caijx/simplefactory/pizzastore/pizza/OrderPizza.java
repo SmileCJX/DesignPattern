@@ -14,28 +14,57 @@ import java.io.InputStreamReader;
 public class OrderPizza {
 
     // 构造器
-    public OrderPizza() {
-        Pizza pizza = null;
-        String orderType; // 订购披萨的类型
+//    public OrderPizza() {
+//        Pizza pizza = null;
+//        String orderType; // 订购披萨的类型
+//        do {
+//            orderType = getType();
+//            if ("greek".equals(orderType)) {
+//                pizza = new GreekPizza();
+//                pizza.setName(" 希腊披萨");
+//            } else if ("cheese".equals(orderType)) {
+//                pizza = new CheesePizza();
+//                pizza.setName(" 奶酪披萨");
+//            } else if ("pepper".equals(orderType)) {
+//                pizza = new PepperPizza();
+//                pizza.setName(" 胡椒披萨");
+//            } else {
+//                break;
+//            }
+//            // 输出披萨的制作过程
+//            pizza.prepare();
+//            pizza.bake();
+//            pizza.cut();
+//            pizza.box();
+//        } while (true);
+//    }
+
+
+    public OrderPizza(SimpleFactory simpleFactory) {
+        setFactory(simpleFactory);
+    }
+
+    // 定义一个简单工厂对象
+    private SimpleFactory simpleFactory;
+
+    private Pizza pizza = null;
+
+    public void setFactory(SimpleFactory simpleFactory) {
+        String orderType = ""; // 用户输入
+        this.simpleFactory = simpleFactory;
         do {
             orderType = getType();
-            if ("greek".equals(orderType)) {
-                pizza = new GreekPizza();
-                pizza.setName(" 希腊披萨");
-            } else if ("cheese".equals(orderType)) {
-                pizza = new CheesePizza();
-                pizza.setName(" 奶酪披萨");
-            } else if ("pepper".equals(orderType)) {
-                pizza = new PepperPizza();
-                pizza.setName(" 胡椒披萨");
+            pizza = this.simpleFactory.createPizza(orderType);
+            // 输出pizza的制作过程
+            if (null != pizza) {
+                pizza.prepare();
+                pizza.bake();
+                pizza.cut();
+                pizza.box();
             } else {
+                System.out.println("订购披萨失败");
                 break;
             }
-            // 输出披萨的制作过程
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
         } while (true);
     }
 
