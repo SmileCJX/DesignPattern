@@ -1,4 +1,4 @@
-package pers.caijx.factory.simplefactory.pizzastore.order;
+package pers.caijx.factory.simplefactory.pizzastore.pizza;
 
 import pers.caijx.factory.simplefactory.pizzastore.pizza.Pizza;
 
@@ -13,6 +13,7 @@ public class PepperPizza extends Pizza {
 
     @Override
     public void prepare() {
+        setName("胡椒披萨");
         System.out.println(" 给胡椒披萨 准备原材料");
     }
 }

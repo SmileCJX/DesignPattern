@@ -1,7 +1,5 @@
 package pers.caijx.factory.simplefactory.pizzastore.pizza;
 
-import pers.caijx.factory.simplefactory.pizzastore.order.PepperPizza;
-
 /**
  * @ClassName SimpleFactory
  * @Description: TODO
@@ -16,13 +14,10 @@ public class SimpleFactory {
         System.out.println("使用简单工厂模式");
         if ("greek".equals(type)) {
             pizza = new GreekPizza();
-            pizza.setName("希腊披萨");
         } else if ("cheese".equals(type)){
             pizza = new CheesePizza();
-            pizza.setName("奶酪披萨");
         } else if ("pepper".equals(type)) {
             pizza = new PepperPizza();
-            pizza.setName("胡椒披萨");
         }
         return pizza;
     }
@@ -33,13 +28,10 @@ public class SimpleFactory {
         System.out.println("使用简单工厂模式");
         if ("greek".equals(type)) {
             pizza = new GreekPizza();
-            pizza.setName("希腊披萨");
         } else if ("cheese".equals(type)){
             pizza = new CheesePizza();
-            pizza.setName("奶酪披萨");
         } else if ("pepper".equals(type)) {
             pizza = new PepperPizza();
-            pizza.setName("胡椒披萨");
         }
         return pizza;
     }
