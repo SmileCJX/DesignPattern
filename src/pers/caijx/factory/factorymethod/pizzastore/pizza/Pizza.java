@@ -3,7 +3,7 @@ package pers.caijx.factory.factorymethod.pizzastore.pizza;
 /**
  * @ClassName Pizza
  * @Description: 将披萨做成抽象类
- * @Author Think
+ * @Author caijx
  * @Date 2019/10/9
  * @Version V1.0
  **/

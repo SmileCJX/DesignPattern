@@ -2,8 +2,8 @@ package pers.caijx.factory.factorymethod.pizzastore.pizza;
 
 /**
  * @ClassName LDPepperPizza
- * @Description: TODO
- * @Author Think
+ * @Description: 伦敦胡椒披萨
+ * @Author caijx
  * @Date 2019/10/12
  * @Version V1.0
  **/
