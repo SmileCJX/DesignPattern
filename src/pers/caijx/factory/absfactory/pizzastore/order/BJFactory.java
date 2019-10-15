@@ -6,7 +6,7 @@ import pers.caijx.factory.absfactory.pizzastore.pizza.Pizza;
 /**
  * @ClassName BJFactory
  * @Description: TODO
- * @Author Think
+ * @Author JunXiangCai
  * @Date 2019/10/13
  * @Version V1.0
  **/
