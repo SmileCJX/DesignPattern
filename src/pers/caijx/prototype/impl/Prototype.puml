@@ -1,0 +1,12 @@
+@startuml
+
+class Clinet
+class Prototype
+class ConcretePrototype1
+class ConcretePrototype2
+
+Clinet ..> Prototype
+Prototype --|> ConcretePrototype1
+Prototype --|> ConcretePrototype2
+
+@enduml
