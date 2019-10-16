@@ -24,5 +24,6 @@ public class Client {
         System.out.println("sheep3 = " + sheep3);
         System.out.println("sheep4 = " + sheep4);
         System.out.println("sheep5 = " + sheep5);
+
     }
 }
