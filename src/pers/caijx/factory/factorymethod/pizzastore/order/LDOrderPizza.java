@@ -7,7 +7,7 @@ import pers.caijx.factory.factorymethod.pizzastore.pizza.Pizza;
 /**
  * @ClassName LDOrderPizza
  * @Description: 伦敦披萨订购
- * @Author Think
+ * @Author JunXiangCai
  * @Date 2019/10/13
  * @Version V1.0
  **/
