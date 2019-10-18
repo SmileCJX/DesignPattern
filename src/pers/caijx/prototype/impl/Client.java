@@ -25,6 +25,5 @@ public class Client {
         System.out.println("sheep3 = " + sheep3 + " sheep3.friend=" + sheep3.getFriend().hashCode());
         System.out.println("sheep4 = " + sheep4 + " sheep4.friend=" + sheep4.getFriend().hashCode());
         System.out.println("sheep5 = " + sheep5 + " sheep5.friend=" + sheep5.getFriend().hashCode());
-
     }
 }
