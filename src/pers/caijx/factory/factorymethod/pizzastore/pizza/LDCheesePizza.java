@@ -3,7 +3,7 @@ package pers.caijx.factory.factorymethod.pizzastore.pizza;
 /**
  * @ClassName LDCheesePizza
  * @Description: 伦敦奶酪披萨
- * @Author caijx
+ * @Author JunXiangCai
  * @Date 2019/10/12
  * @Version V1.0
  **/
