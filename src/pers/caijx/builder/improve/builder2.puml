@@ -1,0 +1,29 @@
+@startuml
+
+class House
+
+class HouseBuilder
+HouseBuilder : -house: House = new House()
+HouseBuilder : +buildBasic()： void
+HouseBuilder : +buildWalls(): void
+HouseBuilder : +roofed(): void
+HouseBuilder : build(): House
+
+class CommonHouse
+class HighBuilding
+
+class HouseDirector
+
+class Client
+
+House --* HouseBuilder
+HouseBuilder <|-- CommonHouse
+HouseBuilder <|-- HighBuilding
+
+HouseDirector o-- HouseBuilder
+
+Client ..> HouseDirector
+Client ..> CommonHouse
+Client ..> HighBuilding
+
+@enduml
