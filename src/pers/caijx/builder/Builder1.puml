@@ -1,0 +1,19 @@
+@startuml
+
+abstract class AbstractHouse
+AbstractHouse : +bulidBasic(): void
+AbstractHouse : +buildWalls(): void
+AbstractHouse : +roofed(): void
+AbstractHouse : +build(): void
+
+class CommonHouse
+class HighBuilding
+
+AbstractHouse <|-- CommonHouse
+AbstractHouse <|-- HighBuilding
+
+class Client
+Client ..> CommonHouse
+Client ..> HighBuilding
+
+@enduml
