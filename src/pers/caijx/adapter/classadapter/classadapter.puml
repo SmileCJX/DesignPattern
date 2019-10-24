@@ -3,7 +3,7 @@
 class Voltage220V
 Voltage220V : output220V(): void
 
-class Adapter
+class VoltageAdapter
 
 interface IVoltage5V
 IVoltage5V : output5V(): void
@@ -13,12 +13,12 @@ phone : charging(): void
 
 class Client
 
-Adapter --|> Voltage220V
-Adapter ..|> IVoltage5V
+VoltageAdapter --|> Voltage220V
+VoltageAdapter ..|> IVoltage5V
 
-phone ..> Adapter
+phone ..> IVoltage5V
 
 Client ..> phone
-Client ..> IVoltage5V
+Client ..> VoltageAdapter
 
 @enduml
