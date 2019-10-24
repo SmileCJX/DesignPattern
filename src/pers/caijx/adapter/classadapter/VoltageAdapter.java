@@ -1,13 +1,13 @@
 package pers.caijx.adapter.classadapter;
 
 /**
- * @ClassName Adapter
+ * @ClassName VoltageAdapter
  * @Description: 适配器
  * @Author JunXiangCai
  * @Date 2019/10/24
  * @Version V1.0
  **/
-public class Adapter extends Voltage220V implements IVoltage5V{
+public class VoltageAdapter extends Voltage220V implements IVoltage5V{
 
     @Override
     public int output5V() {
