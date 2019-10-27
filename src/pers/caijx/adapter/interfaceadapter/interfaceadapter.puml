@@ -1,0 +1,18 @@
+@startuml
+
+interface Interface4
+Interface4 : operation1(): void
+Interface4 : operation2(): void
+Interface4 : operation3(): void
+Interface4 : operation4(): void
+
+abstract class AbsAdapter
+
+AbsAdapter ..|> Interface4
+note right: AbsAdapter抽象类，默认实现接口的所有方法
+
+class A
+
+A ..> AbsAdapter
+
+@enduml
