@@ -9,7 +9,7 @@ interface IVoltage5V
 IVoltage5V : output5V(): void
 
 class phone
-phone : charging(): void
+phone : charging(IVoltage5V: iVoltage5V): void
 
 class Client
 
