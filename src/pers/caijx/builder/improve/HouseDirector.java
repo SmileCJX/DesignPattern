@@ -1,7 +1,5 @@
 package pers.caijx.builder.improve;
 
-import java.net.URLEncoder;
-
 /**
  * @ClassName HouseDirector
  * @Description: 指挥者，这里指定制作流程，返回房子
