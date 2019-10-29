@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * @ClassName DeepProtoType
- * @Description: TODO
+ * @Description: 深拷贝示例
  * @Author JunXiangCai
  * @Date 2019/10/19
  * @Version V1.0
