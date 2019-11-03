@@ -1,0 +1,32 @@
+@startuml
+
+class DispatchServlet
+DispatchServlet : +doDispatch(): void
+
+interface Controller
+interface HandlerApapter
+
+class HttpController
+class SimpleController
+class AnnotationController
+
+HttpController ..|> Controller
+SimpleController ..|> Controller
+AnnotationController ..|> Controller
+
+class HttpHandlerAdapter
+class SimpleHandlerApapter
+class AnnotationHandlerApater
+
+HttpHandlerAdapter ..|> HandlerApapter
+SimpleHandlerApapter ..|> HandlerApapter
+AnnotationHandlerApater ..|> HandlerApapter
+
+DispatchServlet ..> Controller
+HandlerApapter --o DispatchServlet
+
+HttpHandlerAdapter ..> HttpController
+SimpleHandlerApapter ..> SimpleController
+AnnotationHandlerApater ..> AnnotationController
+
+@enduml
