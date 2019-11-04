@@ -1,0 +1,26 @@
+@startuml
+
+class Client
+
+abstract class Phone
+Phone : -brand: Brand
+
+class FolderPhone
+class UpRightPhone
+
+FolderPhone --|> Phone
+UpRightPhone --|> Phone
+Brand --o Phone
+
+interface Brand
+class Vivo
+class XiaoMi
+
+Vivo ..|> Brand
+XiaoMi ..|> Brand
+
+Client ..> Brand
+Client ..> Phone
+
+
+@enduml
