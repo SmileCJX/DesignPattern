@@ -1,0 +1,17 @@
+package pers.caijx.decorator;
+
+/**
+ * @ClassName Chocolate
+ * @Description: 具体的Decorator，这里就是调味品
+ * @Author Think
+ * @Date 2019/11/11
+ * @Version V1.0
+ **/
+public class Chocolate extends Decorator {
+
+    public Chocolate(Drink obj) {
+        super(obj);
+        setDes(" 巧克力 ");
+        setPrice(3.0F); // 调味品的价格
+    }
+}
