@@ -28,5 +28,12 @@ public class CoffeeBar {
         System.out.println("order加入一份牛奶费用，加入一份巧克力，加入一份巧克力费用：" + order.cost());
         System.out.println("order加入一份牛奶，加入一份巧克力，加入一份巧克力订单描述信息：" + order.getDes() );
 
+        Drink order2 = new Decaf();
+        System.out.println("无因咖啡费用：" + order2.cost());
+        System.out.println("无因咖啡订单描述信息：" + order2.getDes());
+        order2 = new Milk(order2);
+        System.out.println("无因咖啡，加入一份牛奶费用：" + order2.cost());
+        System.out.println("无因咖啡，加入一份牛奶订单描述信息：" + order2.getDes());
+
     }
 }
