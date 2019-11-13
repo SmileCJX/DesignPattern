@@ -3,7 +3,7 @@ package pers.caijx.principle.Ocp.improve;
 /**
  * @ClassName Ocp
  * @Description: 开闭原则改进
- * @Author Think
+ * @Author JunXiangCai
  * @Date 2019/10/4
  * @Version V1.0
  **/
