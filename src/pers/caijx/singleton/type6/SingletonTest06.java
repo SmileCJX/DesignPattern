@@ -3,7 +3,7 @@ package pers.caijx.singleton.type6;
 /**
  * @ClassName SingletonTest06
  * @Description: 单例（双重检查）
- * @Author Think
+ * @Author JunXiangCai
  * @Date 2019/10/8
  * @Version V1.0
  **/

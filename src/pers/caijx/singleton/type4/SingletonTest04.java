@@ -3,7 +3,7 @@ package pers.caijx.singleton.type4;
 /**
  * @ClassName SingletonTest04
  * @Description: 单例（线程安全懒汉式）
- * @Author Think
+ * @Author JunXiangCai
  * @Date 2019/10/8
  * @Version V1.0
  **/
