@@ -2,8 +2,8 @@ package pers.caijx.flyweight;
 
 /**
  * @ClassName ConcreteWebSite
- * @Description: TODO
- * @Author 具体的网站
+ * @Description: 具体的网站
+ * @Author JunXiangCai
  * @Date 2019/11/28
  * @Version V1.0
  **/
