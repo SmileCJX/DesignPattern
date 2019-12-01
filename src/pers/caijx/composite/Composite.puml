@@ -9,7 +9,9 @@ Component : +remove(component: Component): void
 Component : +getChild(num: int): void
 class Leaf
 Leaf : +operation(): void
+note bottom of Leaf : 叶子没有孩子，不能操作孩子，但其定义组合内元素的行为
 class Composite
+note right of Composite : 组合可以操作子节点和叶子，但可能不具有叶子的某些行为
 Composite : +operation(): void
 Composite : +add(component: Component): void
 Composite : +remove(component: Component): void
