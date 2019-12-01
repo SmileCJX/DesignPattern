@@ -15,6 +15,11 @@ Composite : +add(component: Component): void
 Composite : +remove(component: Component): void
 Composite : +getChild(num: int): void
 
+client ..> Component
+Leaf --|> Component
+Composite --|> Component
+Component --o Composite
+
 
 
 @enduml
