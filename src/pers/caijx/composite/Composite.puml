@@ -1,0 +1,20 @@
+@startuml
+
+class client
+abstract class Component
+note top of Component : Component为所有对象定义一个类，不管是叶子还是节点
+Component : +operation(): void
+Component : +add(component: Component): void
+Component : +remove(component: Component): void
+Component : +getChild(num: int): void
+class Leaf
+Leaf : +operation(): void
+class Composite
+Composite : +operation(): void
+Composite : +add(component: Component): void
+Composite : +remove(component: Component): void
+Composite : +getChild(num: int): void
+
+
+
+@enduml
