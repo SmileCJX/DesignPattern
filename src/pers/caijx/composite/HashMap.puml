@@ -1,0 +1,16 @@
+@startuml
+
+class Client
+interface Map
+abstract class AbstractHashMap
+class HashMap
+AbstractHashMap ..|> Map
+HashMap --|> AbstractHashMap
+
+class Node
+Node --* HashMap
+
+Client ..> Map
+Client ..> HashMap
+
+@enduml
